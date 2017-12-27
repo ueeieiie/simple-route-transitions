@@ -2,7 +2,7 @@
 
 ### **Most simple** example with: **React-router-dom** and **React-router-transition**
 
-Live example: <a href="https://ueeieiie.github.io/simple-route-transitions/public/" target="_blank">Live Example</a>
+<a href="https://ueeieiie.github.io/simple-route-transitions/public/" target="_blank"><h3>Live Example</h3></a>
 
 
 1. clone repo.
