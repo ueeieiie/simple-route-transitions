@@ -9,4 +9,4 @@ Live example: http://ueeieiie.github.io/simple-route-transitions/
 3. `npm start`
 4. Enjoy life again!
 
-#### * Currently works with HashRouter..
+#### * Currently works with HashRouter...
