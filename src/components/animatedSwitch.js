@@ -1,4 +1,4 @@
-//FROM LIBRARIES
+    //FROM LIBRARIES
 // React's
 import React from 'react';
 
@@ -11,10 +11,10 @@ import styled from 'styled-components';
 // React-router-transition
 import { AnimatedSwitch, spring } from 'react-router-transition';
 
-// COMPONENTS
+    // COMPONENTS
 import { Red, Green, Blue } from './colors';
 
-// HELPER FUNCTIONS
+    // HELPER FUNCTIONS
 // we need to map the `scale` prop we define below
 // to the transform style property
 function mapStyles(styles) {
@@ -72,10 +72,11 @@ export default () => (
         // Optional props
         mapStyles={mapStyles}>
         
-        <Route path="/" exact render={() => <Redirect to="/red" />} />
         <Route path="/red" component={Red} />
         <Route path="/green" component={Green} />
         <Route path="/blue" component={Blue} />
+        <Route path="/" exact render={() => <Redirect to="/red" />} />
+        <Redirect to="/red" />
 
     </StyledAnimatedSwitch>
 );

@@ -1,12 +1,14 @@
 const path = require('path');
 const HtmlPlugin = require('html-webpack-plugin');
 
+const BUILD_DIR = path.join(__dirname, 'public');
+const APP_DIR = path.join(__dirname, 'src');
+
 module.exports = {
-    entry: path.join(__dirname, 'index.js'),
+    entry: path.join(APP_DIR, 'index.js'),
     output: {
-        filename: 'app.js',
-        path: path.join(__dirname, 'dist'),
-        publicPath: '/'
+        filename: 'bundle.js',
+        path: path.join(BUILD_DIR),
     },
     module: {
         rules: [
@@ -18,13 +20,15 @@ module.exports = {
         ]
     },
     devServer: {
-        historyApiFallback: true
+        historyApiFallback: true,
+        compress: true,
+        index: 'index.html'
     },
 
     plugins:[
         new HtmlPlugin({
             filename: 'index.html',
-            template: './index.html'
+            template: './src/index.html'
         })
     ],
     devtool: 'source-maps'

@@ -2,7 +2,7 @@
 import React from 'react';
 
 // Recat-router-dom
-import {BrowserRouter as Router } from 'react-router-dom';
+import {HashRouter as Router } from 'react-router-dom';
 
 // Styled-components
 import styled from 'styled-components';
@@ -23,7 +23,7 @@ const Wrapper = styled.div`
 // App Component
 const App = () => {
     return(
-        <Router>
+        <Router basename="/">
             <Wrapper>
                 <Menu />
                 <AnimatedSwitchComponent />

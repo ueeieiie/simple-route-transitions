@@ -40,8 +40,8 @@ export default class Menu extends React.Component {
         return(
             <StyledMenu>
                 {
-                    links.map(l => (
-                        <NavLink activeClasName="active" to={l.path}> 
+                    links.map((l, index) => (
+                        <NavLink key={index} activeClassName="active" to={l.path}> 
                             <li> {l.title} </li> 
                         </NavLink>
                     ))
