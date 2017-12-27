@@ -2,7 +2,8 @@
 
 ### **Most simple** example with: **React-router-dom** and **React-router-transition**
 
-Live example: https://ueeieiie.github.io/simple-route-transitions/public/
+Live example: <a href="https://ueeieiie.github.io/simple-route-transitions/public/" target="_blank">Live Example</a>
+
 
 1. clone repo.
 2. `npm install`
